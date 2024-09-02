@@ -23,5 +23,28 @@
     --title-md: 700 24px/120% var(--font-family-asap);
     --title-sm: 700 16px/120% var(--font-family-asap);
 
-    
+    --font-family-inc: "Inconsolata", monospace;
+    --subtitle: 400 20px/120% var(--font-family-inc);
+
+    --font-family-maven: "Maven Pro", sans-serif;
+    --text-md: 400 16px/140% var(--font-family-maven);
+    --text-sm: 400 14px/140% var(--font-family-maven);
+}
+
+body {
+    font: var(--text-sm);
+    background-color: var(--gray-200);
+}
+
+h1 {
+    font: var(--title-lg);
+}
+
+h4 {
+    font: var(--subtitle);
+}
+
+p {
+    font: var(--text-sm);
+    color: var(--gray-400);
 }
