@@ -117,7 +117,8 @@
             }
 
             &:hover {
-
+                border: 1.5px solid var(--gray-400);
+                cursor: pointer;
             }
         }
     }
@@ -127,5 +128,101 @@
 #services {
     background-color: var(--gray-100);
     height: 480px;
+    padding-block: 88px 120px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+
+    h4 {
+        color: var(--red);
+    }
+
+    h2 {
+        font: var(--text-md);
+        color: var(--gray-600);
+        font-weight: 600;
+        margin-top: 8px;
+    }
+
+    #options {
+        margin-top: 56px;
+        display: grid;
+        max-width: 888px;
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: 24px;
+
+        .cardService {
+            border-radius: 12px;
+            border: 2px solid var(--gray-200);
+            height: 155px;
+            text-align: left;
+            padding: 20px;
+
+            .titleService {
+                color: var(--gray-600);
+                font: var(--title-sm);
+                margin-top: 20px;
+            }
+
+            p {
+                color: var(--gray-500);
+                margin-top: 8px;
+            }
+        }
+    }
+
+}
+
+#contact {
+    background-image: url(../assets/Background_Contacts.png);
+    height: 787px;
+    background-size: cover;
+
+    padding-block: 126px 200px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+
+    #contTitle {
+        h4 {
+            color: var(--purple);
+        }
     
+        h2 {
+            font: var(--text-md);
+            color: var(--gray-600);
+            font-weight: 600;
+            margin-top: 8px;
+        }
+    
+        p {
+            margin-top: 8px;
+        }
+    }
+
+    #links {
+        margin-top: 48px;
+        display: grid;
+        gap: 16px;
+        width: 320px;
+
+        .contCard {
+            background-color: var(--gray-300);
+            border-radius: 8px;
+            height: 68px;
+            
+            display: grid;
+            grid-template-columns: auto 1fr auto;
+            gap: 12px;
+            padding: 20px;
+            align-items: center;
+
+            &:hover {
+                border: 1.5px solid var(--blue);
+                cursor: pointer;
+            }
+        }
+    }
 }
